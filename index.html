@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>To-Do List com Horário e Tipo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+
+<body>
+  <main>
+    <h1 class="font-1-xxl cor-12">Tarefas</h1>
+  <div class="to-do">
+    
+  <div class="formulario">
+  <div class="form">
+    <input class="input-text font-2-s" type="text" id="taskInput" placeholder="Digite sua tarefa..." />
+  </div>
+  <div class="details">
+      <select class="type-input font-2-s cor-10" id="typeInput">
+        <option value="">Tipo</option>
+        <option value="Estudo">Estudo</option>
+        <option value="Faxina">Faxina</option>
+        <option value="Treino">Treino</option>
+        <option value="Trabalho">Trabalho</option>
+        <option value="Outro">Outro</option>
+      </select>
+
+
+    <input class="input-time font-2-s cor-10" type="time" id="timeInput" />
+  </div>
+  
+  <button class="form-button font-2-s cor-10" onclick="addTask()">Adicionar</button>
+  </div>
+  <div class="tasks-list">
+    <ul class="taskList" id="taskList"></ul>
+  </div>
+  </div>
+
+</div>
+  <script src="script.js"></script>
+</main>
+</body>
+</html>  
